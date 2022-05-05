@@ -1,0 +1,83 @@
+/* === GENERAL === */
+ 
+*{
+    margin: 20px;
+    padding: 0;
+    box-sizing: border-box;
+ }
+  
+ html {
+ font-size: 100%;
+ }
+  
+ body {
+ max-width: 1440px;
+ margin: 0 auto;
+ position: relative;
+ height: 50remh;
+ }
+  
+
+div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100px;
+    background: red;
+    border-radius: 100px;
+    animation-name: rolling;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+div:hover {
+    animation-play-state: paused;
+}
+
+@keyframes rolling {
+    0% {
+      
+        background: red;
+    }
+
+    25% {
+      
+        background: yellow;
+    }
+
+    50% {
+      
+    
+        background: green;
+    }
+
+    75% {
+      
+        background: blue;
+    }
+
+    100% {
+   
+        background: red;
+    }
+
+}
+ /* wrapper {
+ margin: 0 auto;
+ }
+  
+ /* ====== BODY ====== */
+  
+ /* ====== HEADER ====== */
+  
+ /* ====== MAIN ====== */
+  
+ /* ====== FOOTER ====== */
+  
+ /* =========================================================================
+                            MEDIA QUERIES
+ =========================================================================*/
+  
+ 
